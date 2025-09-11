@@ -48,7 +48,7 @@ class KontextArchPresetMain:
         elif 天气 == "雨天":
             prompt_parts.append("rainy day, wet floor, person holding umbrella")
         elif 天气 == "雪天":
-            prompt_parts.append("snowing day, buildings, floors, and plants covered in snow")
+            prompt_parts.append("snowing day, buildings&floor&plants are covered in snow")
         elif 天气 == "雾天":
             prompt_parts.append("a foggy day")
   
@@ -137,4 +137,5 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     "KontextArchPresetMain": "Kontext建筑风格预设"
 }
+
 
