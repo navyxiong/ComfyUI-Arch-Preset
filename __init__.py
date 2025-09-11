@@ -27,16 +27,6 @@ class KontextArchPresetMain:
 
     def generate_prompt(self, time, weather, structure, material, surrounding, custom_prompt):
         prompt_parts = []
-        if time != "无":
-            prompt_parts.append(f"时间: {time}")
-        if weather != "无":
-            prompt_parts.append(f"天气: {weather}")
-        if structure != "无":
-            prompt_parts.append(f"建筑结构: {structure}")
-        if material != "无":
-            prompt_parts.append(f"建筑材料: {material}")
-        if surrounding != "无":
-            prompt_parts.append(f"周边环境: {surrounding}")
         if custom_prompt:
             prompt_parts.append(custom_prompt)
         full_prompt = ", ".join(prompt_parts)
