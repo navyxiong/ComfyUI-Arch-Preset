@@ -18,7 +18,7 @@ class KontextArchPresetMain:
                 ], {"default": "无"}),
                 "玻璃效果": (["无", "镜面玻璃", "玻璃内透", "内透灯光"], {"default": "无"}),
                 "天空效果": (["无云", "少云", "多云"],  {"default": "无"}),
-                "custom_prompt": ("STRING", {"multiline": True, "default": ""}),
+                "custom_prompt": ("STRING", {"default": ""}),
             }
         }
     
@@ -27,7 +27,7 @@ class KontextArchPresetMain:
     FUNCTION = "generate_prompt"
     CATEGORY = "Kontext建筑风格预设"
 
-    def generate_prompt(self, time, weather, structure, material, surrounding, glass, custom_prompt):
+    def generate_prompt(self, 时间, 天气, 建筑结构, 建筑材料, 周边环境, 玻璃效果, 天空效果, custom_prompt=""):
         prompt_parts = []
         
         # 时间描述
@@ -73,6 +73,14 @@ class KontextArchPresetMain:
             prompt_parts.append("aluminum panels exterior wall")
         elif 建筑材料 == "玻璃幕墙":
             prompt_parts.append("glass curtain wall, glass reflects the surrounding environment")
+        elif 建筑材料 == "红砖外墙":
+            prompt_parts.append("red brick exterior wall")
+        elif 建筑材料 == "灰砖外墙":
+            prompt_parts.append("gray brick exterior wall")
+        elif 建筑材料 == "石头外墙":
+            prompt_parts.append("natural stone wall, rugged and organic texture, irregularly shaped stones")
+        elif 建筑材料 == "木饰面板外墙":
+            prompt_parts.append("wooden decorative panel exterior wall")
 
         # 周边环境
         if 周边环境 == "城市街景":
@@ -113,7 +121,7 @@ class KontextArchPresetMain:
             prompt_parts.append("clean sky, no cloud")
         elif 天空效果 == "少云":
             prompt_parts.append("a sky with few clouds")
-        elif 玻璃效果 == "多云":
+        elif 天空效果 == "多云":
             prompt_parts.append("cloudy sky")
          
         if custom_prompt:
