@@ -18,7 +18,7 @@ class KontextArchPresetMain:
                 ], {"default": "无"}),
                 "玻璃效果": (["无", "镜面玻璃", "玻璃内透", "内透灯光"], {"default": "无"}),
                 "天空效果": (["无云", "少云", "多云"],  {"default": "无"}),
-                "custom_prompt": ("STRING", {"default": ""}),
+                "custom_prompt": ("STRING", {"default": "", "multiline": True}),
             }
         }
     
@@ -137,3 +137,4 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     "KontextArchPresetMain": "Kontext建筑风格预设"
 }
+
