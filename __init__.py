@@ -38,7 +38,7 @@ class KontextArchPresetMain:
         elif 时间 == "黄昏":
             prompt_parts.append("dusk, golden hour, indoor light")
         elif 时间 == "夜晚":
-            prompt_parts.append("night-time, dark blue sky, warm indoor light")
+            prompt_parts.append("midnight, black sky, warm indoor light")
 
         # 天气描述
         if 天气 == "晴天":
@@ -137,6 +137,7 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     "KontextArchPresetMain": "Kontext建筑风格预设"
 }
+
 
 
 
