@@ -42,9 +42,9 @@ class KontextArchPresetMain:
 
         # 天气描述
         if 天气 == "晴天":
-            prompt_parts.append("sunny day, clean sky")
+            prompt_parts.append("sunny day")
         elif 天气 == "阴天":
-            prompt_parts.append("overcast, cloudy sky")
+            prompt_parts.append("overcast")
         elif 天气 == "雨天":
             prompt_parts.append("rainy day, wet floor, person holding umbrella")
         elif 天气 == "雪天":
@@ -120,7 +120,7 @@ class KontextArchPresetMain:
         if 天空效果 == "无云":
             prompt_parts.append("clean sky, no cloud")
         elif 天空效果 == "少云":
-            prompt_parts.append("a sky with few clouds")
+            prompt_parts.append("sky with few clouds")
         elif 天空效果 == "多云":
             prompt_parts.append("cloudy sky")
          
@@ -137,6 +137,7 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     "KontextArchPresetMain": "Kontext建筑风格预设"
 }
+
 
 
 
