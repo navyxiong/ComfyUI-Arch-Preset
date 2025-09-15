@@ -1,5 +1,5 @@
 # Comfyui-Arch-Preset
-![封面](https://github.com/user-attachments/assets/53235a34-5426-4547-a996-48389b35c95f)
+![公众号封面](https://github.com/user-attachments/assets/cd62d8c8-b68b-4bee-a561-a479c8869dcb)
 
 ## 用于Kontext模型线稿生成建筑效果图，精简提示词输出,英文直出.
 ## This node is used to generate renderings of kontext model drafts and preset architectural related prompt words.
@@ -19,7 +19,8 @@
 ## 自定义提示词可自行补充需要添加的英文提示词
 ## Custom prompts can be supplemented with English prompts that need to be added
 
-<img width="807" height="576" alt="image" src="https://github.com/user-attachments/assets/114ed86b-baba-4a3b-b92d-54386176f2d8" />
+<img width="681" height="519" alt="00" src="https://github.com/user-attachments/assets/a3017f9f-4ec3-4460-935a-e890c025a3b0" />
+
 
 ## 案例1
 ![002](https://github.com/user-attachments/assets/6bfcc273-fb67-4de6-8a1e-140a7c644e37)
