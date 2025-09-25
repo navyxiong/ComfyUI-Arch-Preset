@@ -10,7 +10,7 @@ class KontextArchPresetMain:
                 "时间": (["无", "清晨", "正午", "黄昏", "夜晚"], {"default": "无"}),
                 "天气": (["无", "晴天", "阴天", "雨天", "雪天", "雾天"], {"default": "无"}),
                 "建筑结构": (["无", "混凝土结构", "钢结构", "木结构", "网架结构", "膜结构"], {"default": "无"}),
-                "建筑材料": (["无", "混凝土外墙", "玻璃幕墙", "木板外墙", "铝板外墙", "石材外墙"], {"default": "无"}),
+                "建筑材料": (["无", "混凝土外墙", "石材外墙", "铝板外墙", "玻璃幕墙", "红砖外墙", "灰砖外墙", "石头外墙", "木饰面板外墙"], {"default": "无"}),
                 "周边环境": ([
                     "无", "城市街景", "商业中心", "住宅区", 
                     "校园", "工业区", "历史街区", "公园",
@@ -36,15 +36,15 @@ class KontextArchPresetMain:
         elif 时间 == "正午":
             prompt_parts.append("midday, light blue sky")
         elif 时间 == "黄昏":
-            prompt_parts.append("dusk, sunset, golden hour, indoor light")
+            prompt_parts.append("dusk, golden hour, indoor light")
         elif 时间 == "夜晚":
-            prompt_parts.append("late at night, black sky, warm indoor light")
+            prompt_parts.append("late at night, black sky, warm indoor lighting")
 
         # 天气描述
         if 天气 == "晴天":
-            prompt_parts.append("sunny day,high solar altitude angle")
+            prompt_parts.append("sunny day,high solar altitude angle, ‌frontal lighting")
         elif 天气 == "阴天":
-            prompt_parts.append("overcast")
+            prompt_parts.append("overcast, cloudy sky")
         elif 天气 == "雨天":
             prompt_parts.append("rainy day, raining, person holding umbrella")
         elif 天气 == "雪天":
@@ -120,7 +120,7 @@ class KontextArchPresetMain:
         if 天空效果 == "无云":
             prompt_parts.append("clean sky, no cloud")
         elif 天空效果 == "少云":
-            prompt_parts.append("sky with few clouds")
+            prompt_parts.append("a sky with few clouds")
         elif 天空效果 == "多云":
             prompt_parts.append("cloudy sky")
          
@@ -137,12 +137,3 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     "KontextArchPresetMain": "Kontext建筑风格预设"
 }
-
-
-
-
-
-
-
-
-
